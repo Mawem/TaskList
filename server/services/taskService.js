@@ -6,7 +6,7 @@ const fs = require('fs');
 const FAKER_API = 'https://lorem-faker.vercel.app/api';
 
 //TODO: improve inline description/documentation
-//nice to have: module for db management
+//nice to have: module for db management and utils for common processes
 //db conexion initialization
 const db = new Database(':memory:');
 const tasksTable = fs.readFileSync('db/tasks.sql', 'utf8');
