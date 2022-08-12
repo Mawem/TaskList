@@ -3,7 +3,7 @@ import { useState } from 'react'
 import NumberOfTasks from './NumberOfTasks'
 import TaskList from './TaskList'
 //nice to have: implement env for api baseurl
-const GET_URL = 'http://localhost:3000/tasks?not=';
+const GET_URL = 'http://localhost:3001/tasks?not=';
 
 const Container = () => {
   const [list, setList] = useState([]);

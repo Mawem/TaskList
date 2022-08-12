@@ -5,7 +5,7 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 //nice to have: implement env for api baseurl 
-const PUT_URL = 'http://localhost:3000/tasks';
+const PUT_URL = 'http://localhost:3001/tasks';
 
 const TaskModal = ({open, toggleModal, taskSelected}) => {
     const handleCompleteUpd = () => {
@@ -16,6 +16,7 @@ const TaskModal = ({open, toggleModal, taskSelected}) => {
             body: JSON.stringify(taskSelected)
         })
         .then(console.log(`update for "${taskSelected.title}" task with UUID: ${taskSelected.uuid}`))
+        .finally(toggleModal())
     }
     const style = {
         position: 'absolute',

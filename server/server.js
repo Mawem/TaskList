@@ -3,7 +3,7 @@ const TaskService = require('./services/taskService');
 const cors = require('cors');
 
 const app = express();
-const port = 3000;
+const port = 3001;
 const taskService = new TaskService();
 const TASKS_ROUTER_ENDPOINT = '/tasks';
 const DEFAULT_NOT = 3;
