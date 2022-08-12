@@ -24,7 +24,7 @@ Inside the main project folder run the command below
 ```bash
 docker-compose up -d
 ```
-This will run the server on port 3001 and the client on 3000 either locally or in Docker.
+The project will run the server on port 3001 and the client on 3000 either locally or in Docker.
 
 ## Task API
 This endpoints allow task management
